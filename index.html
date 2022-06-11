@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Footway</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="preload" as="image" href="img/shoes_two.avif" type="image/avif">
+      <link href="css/fonts.css" rel="stylesheet" type="text/css"><!--Fonts css-->
+      <link href="css/landing.css" rel="stylesheet" type="text/css"><!--LANDING-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script><!--Jquerry connection-->
+      <!--SLICK CAROUSEL-->
+      <link rel="stylesheet" type="text/css" href="./carousel/slick-1.8.1/slick/slick.css"><!--CAROUSEL CSS http://kenwheeler.github.io/slick/-->
+      <link rel="stylesheet" type="text/css" href="./carousel/slick-1.8.1/slick/slick-theme.css"><!--CAROUSEL CSS http://kenwheeler.github.io/slick/-->
+   </head>
+   <body>
+      <!--Hide all view only burger-->
+      <div class="hide-all-back">
+         
+      </div>
+      <!--Menu Top black-->
+      <div class="menu-top-block">
+         <div class="top-content">
+            <!--Express item-->
+            <div class="left-top-block">
+               <div class="top-item">
+                  <svg   xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                     <path fill="inherit" d="M624 352h-16V243.9c0-12.7-5.1-24.9-14.1-33.9L494 110.1c-9-9-21.2-14.1-33.9-14.1H416V48c0-26.5-21.5-48-48-48H112C85.5 0 64 21.5 64 48v48H8c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h272c4.4 0 8 3.6 8 8v16c0 4.4-3.6 8-8 8H40c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h208c4.4 0 8 3.6 8 8v16c0 4.4-3.6 8-8 8H8c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h208c4.4 0 8 3.6 8 8v16c0 4.4-3.6 8-8 8H64v128c0 53 43 96 96 96s96-43 96-96h128c0 53 43 96 96 96s96-43 96-96h48c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16zM160 464c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm320 0c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm80-208H416V144h44.1l99.9 99.9V256z"></path>
+                  </svg>
+               </div>
+               <div>Express</div>
+            </div>
+            <!--Logo item-->
+            <div class="center-top-block">
+               <svg xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 64 26" xmlspace="preserve">
+                  <path d="M10.99 13.64c-1.666-.65-2.966-2.973-2.938-5.199.028-2.23 1.38-3.621 3.054-3.084 1.723.554 3.131 2.927 3.095 5.271-.036 2.34-1.497 3.681-3.21 3.012zm.152-10.859c-2.696-.808-4.83 1.462-4.871 5.027-.042 3.553 2.008 7.282 4.684 8.383 2.8 1.152 5.218-.987 5.281-4.839.064-3.866-2.271-7.725-5.094-8.57zm11.02 15.071c-1.987-.773-3.525-3.352-3.483-5.775.043-2.428 1.66-3.9 3.658-3.261 2.06.66 3.741 3.302 3.687 5.866-.053 2.558-1.812 3.967-3.861 3.17zm.229-11.848c-3.216-.96-5.762 1.448-5.826 5.324-.064 3.862 2.357 7.997 5.544 9.305 3.35 1.374 6.268-.866 6.362-5.084.094-4.234-2.7-8.536-6.08-9.545zm-17.352.122l-2.121-.732.027-2.704 3.691 1.184c.208.067.38-.106.383-.385L7.035 2.2c.003-.28-.164-.559-.371-.621L1.45.01c-.189-.056-.344.114-.347.38L1 11.484c-.002.263.148.539.335.616l1.16.475c.192.08.35-.074.353-.34l.047-4.628 2.12.772c.2.074.367-.09.37-.364L5.4 6.75c.003-.275-.16-.555-.36-.624zm57.84-2.614c-.043-.13-.136-.18-.263-.14l-1.305.412-1.728 5.27c-.052.16-.127.188-.177.07L57.65 4.939l-1.572.496c-.127.04-.247.193-.304.39a.834.834 0 00.044.603l2.634 5.522c.072.15.132.459.13.672l-.026 4.44c-.001.276.14.429.315.341l1.048-.527c.168-.085.307-.373.31-.642l.04-4.322c.003-.21.064-.56.135-.766l2.44-7.101c.065-.203.078-.402.034-.533zM52.082 15.217l1.17-5.237 1.206 4.22-2.376 1.017zm2.35-8.774c-.073-.25-.285-.398-.482-.336l-.036.011-1.353.427-.027.009c-.206.065-.426.357-.5.665l-.444 1.865-2.035 8.173-.063.249a6.368 6.368 0 01-.047-.208l-1.941-9.156-2.431.767c-.25.078-.499.421-.556.764L42.8 20.054l-.03.18-.035-.151-2.01-9.176c-.071-.322-.355-.513-.635-.425l-1.876.592L28.098 8.03c-.29-.087-.53.11-.538.437l-.033 1.51c-.007.327.222.669.512.762l3.091.991a.555.555 0 01.357.514l-.271 11.503c-.008.332.235.706.54.831l1.884.773c.314.129.577-.043.585-.382l.294-11.744c.005-.223.182-.35.392-.282l3.097.993-.004.062 3.265 11.672c.073.285.346.41.608.277l1.839-.924c.248-.125.494-.499.549-.834l1.825-11.091.034-.202.043.173 2.158 9.106a.394.394 0 00.243.294c.058.044.138.045.23-.001l.04-.02 1.513-.761.271-.137.846-3.528 3.615-1.67.771 2.568 1.605-.807a.454.454 0 00.212-.266.59.59 0 00.013-.357L54.433 6.443z" fillrule="evenodd"></path>
+               </svg>
+            </div>
+            <!--Retur item-->
+            <div class="right-top-block">
+               <div class="top-item-two">
+                  <svg  viewBox="0 -45 512 512" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M413.7 489.9c-4.3-4.4-4.5-11.5-.4-16.1 75.7-83.7 73.7-213.4-7.6-294.7-58.6-58.6-142.7-76.1-216.5-52.5l48.8 48.8c4.7 4.7 4.7 12.3 0 17l-7.1 7.1c-4.7 4.7-12.3 4.7-17 0l-81.1-81.1c-4.7-4.7-4.7-12.3 0-17l85.1-87.1c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17l-50.2 52.2c82.6-21.5 174.1.2 238.6 65.2 93 93.6 95.7 244.1 8.2 341-4.8 5.3-12.9 5.5-17.9.4l-7-7.3zM48.7 318h17.7c8.4 0 14.6-2.1 18.7-6.3 4.1-4.2 6.1-9.8 6.1-16.7 0-6.7-2-12-6-15.7-4-3.7-9.5-5.6-16.6-5.6-6.3 0-11.7 1.7-15.9 5.2-4.3 3.5-6.4 8-6.4 13.6H13c0-8.7 2.4-16.5 7.1-23.5 4.7-6.9 11.3-12.3 19.7-16.2 8.4-3.9 17.8-5.8 27.9-5.8 17.7 0 31.5 4.2 41.5 12.7s15 20.1 15 34.9c0 7.6-2.3 14.7-7 21.1-4.7 6.4-10.8 11.4-18.4 14.8 9.4 3.4 16.4 8.4 21 15.1 4.6 6.7 6.9 14.7 6.9 23.9 0 14.8-5.4 26.7-16.2 35.7-10.8 8.9-25.1 13.4-43 13.4-16.7 0-30.3-4.4-40.9-13.2-10.6-8.8-15.9-20.4-15.9-34.9h33.1c0 6.3 2.4 11.4 7.1 15.4 4.7 4 10.5 6 17.4 6 7.9 0 14.1-2.1 18.5-6.3 4.5-4.2 6.7-9.7 6.7-16.6 0-16.7-9.2-25-27.5-25H48.7v-26z"></path><path d="M239.6 247.4v27.3h-3.2c-15 .2-27.1 4.1-36.2 11.7-9.1 7.6-14.6 18.1-16.5 31.5 8.9-9 20.1-13.5 33.6-13.5 14.5 0 26.1 5.2 34.6 15.6 8.6 10.4 12.8 24.1 12.8 41.1 0 10.9-2.4 20.7-7.1 29.5-4.7 8.8-11.4 15.6-20 20.5s-18.3 7.3-29.2 7.3c-17.6 0-31.8-6.1-42.6-18.4-10.8-12.2-16.2-28.6-16.2-49v-11.9c0-18.1 3.4-34.1 10.3-48 6.8-13.9 16.7-24.6 29.5-32.2 12.8-7.6 27.7-11.5 44.6-11.5h5.6zm-32.3 83.8c-5.4 0-10.2 1.4-14.6 4.2s-7.6 6.5-9.6 11v10.1c0 11.1 2.2 19.7 6.5 25.9 4.4 6.2 10.5 9.3 18.4 9.3 7.1 0 12.9-2.8 17.3-8.4 4.4-5.6 6.6-12.9 6.6-21.8 0-9.1-2.2-16.4-6.7-22-4.4-5.6-10.4-8.3-17.9-8.3zM289.4 334l9.6-84.9h93.6v27.6h-66.4l-4.1 35.9c7.9-4.2 16.2-6.3 25.1-6.3 15.9 0 28.4 4.9 37.4 14.8s13.5 23.7 13.5 41.4c0 10.8-2.3 20.4-6.8 29-4.5 8.5-11.1 15.1-19.6 19.8-8.5 4.7-18.5 7.1-30 7.1-10.1 0-19.5-2-28.1-6.1-8.6-4.1-15.5-9.8-20.5-17.3-5-7.4-7.7-15.9-8-25.3H318c.7 7 3.1 12.4 7.3 16.2 4.2 3.9 9.6 5.8 16.3 5.8 7.5 0 13.3-2.7 17.3-8.1 4.1-5.4 6.1-13 6.1-22.9 0-9.5-2.3-16.7-7-21.8-4.7-5-11.3-7.6-19.8-7.6-7.9 0-14.3 2.1-19.2 6.2l-3.2 3-26.4-6.5z"></path>
+                  </svg>
+               </div>
+               <div>Fri retur!</div>
+            </div>
+         </div>
+      </div>
+      <!--Violet menu middle-->
+      <div class="search-container">
+         <!--BTN Search-->
+         <div class="md-btn-cust">
+            <!--MENU Burger-->
+            <div class="btn-centered" id="open-drop-dwn-j">
+               <div>
+                  <svg width="24px" height="24px" viewBox="0 -50 512 512" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" role="img">
+                     <path d="M128 166.8H0V115.6H128V166.8ZM128 243.6H0V294.8H128V243.6ZM475.904 422.8L377.856 324.752C357.376 338.064 333.312 346 307.2 346C236.544 346 179.2 288.656 179.2 218C179.2 147.344 236.544 90 307.2 90C377.856 90 435.2 147.344 435.2 218C435.2 244.112 427.264 268.176 413.952 288.4L512 386.704L475.904 422.8ZM384 218C384 175.76 349.44 141.2 307.2 141.2C264.96 141.2 230.4 175.76 230.4 218C230.4 260.24 264.96 294.8 307.2 294.8C349.44 294.8 384 260.24 384 218ZM0 422.8H256V371.6H0V422.8Z"></path>
+                  </svg>
+               </div>
+            </div>
+            <!--SELECT-->
+            <!-------------->
+            <div class="select-container">
+               <form action="#" id="open-byse-click">
+                  <div class="flex-container-search-close">
+                     <div class="left-searc-side">
+                        <input type="text" placeholder="Sok & filtrera ..." id="main-wb-search">
+                     </div>
+                     <div class="right-searc-side" id="clear-search-m">
+                        <svg width="20px" height="20px" xmlns="http://www.w3.org/2000/svg" viewBox="-10 -10 320 512">
+                           <path fill="#757575" d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"></path>
+                       </svg>
+                     </div>
+                  </div>
+               </form>
+               <div class="drop-down-site-container">
+                  <div class="drop-width-container" id="show-hide-drop"> <!-- class [drop-viewed-mn] -- view dropdwon-->
+                     <div class="drop-container-all">
+                         <div class="content">
+                             <p class="active-filter">Activa filter</p>
+                             <div class="tags-container-drop" id="tgs-cont"></div>
+                             <!--Line Category first --- 1_check... -->
+                             <div class="dropdown" id="dropdown-food-1"><!--id number same as button data attr id-->
+                                 <div class="btn-df" >
+                                     <div class="first-drp-text">Avdelning</div>
+                                     <div class="second-drp-image"><img src="img/select_arrow.svg" alt="arrow"></div>
+                                     <div class="overlay-real-button" id="drop_1" data-id="1"><!--for js same as line category 1--></div>
+                                 </div>
+                                 <div id="form-food" name="formFood" class="dropdown-form">
+                                    <ul class="dropdown-options" role="listbox" tabindex="-1" data-id="1"><!--for js same as line category 1-->
+                                     <!--Option 1 in first line category --- 1_check_1-->
+                                     <li class="option">
+                                        <input type="checkbox" name="1_check_1" id="1_check_1" class="inpt-check" data-name="Dam">
+                                        <label for="1_check_1" class="inpt-check">Dam</label>
+                                     </li>
+                                     <!--Option 1 in first line category --- 1_check_2-->
+                                     <li class="option">
+                                         <input type="checkbox" name="1_check_2" id="1_check_2" class="inpt-check" data-name="Hello">
+                                         <label for="1_check_2" class="inpt-check">Hello</label>
+                                     </li>
+                                     <!--Option 1 in first line category --- 1_check_3-->
+                                     <li class="option">
+                                         <input type="checkbox" name="1_check_3" id="1_check_3" class="inpt-check" data-name="Cat">
+                                         <label for="1_check_3" class="inpt-check">Cat</label>
+                                     </li>
+                                     <!--Option 1 in first line category --- 1_check_4-->
+                                     <li class="option">
+                                         <input type="checkbox" name="1_check_4" id="1_check_4" class="inpt-check" data-name="Dog">
+                                         <label for="1_check_4" class="inpt-check">Dog</label>
+                                     </li>
+                                     <!--Option 1 in first line category --- 1_check_5-->
+                                     <li class="option">
+                                         <input type="checkbox" name="1_check_5" id="1_check_5" class="inpt-check" data-name="Fly">
+                                         <label for="1_check_5" class="inpt-check">Fly</label>
+                                     </li>
+                                     </ul>
+                                 </div>
+                             </div>
+                             <!--Line Category second --- 2_check... -->
+                             <div class="dropdown" id="dropdown-food-2"><!--id number same as button data attr id-->
+                                 <div class="btn-df" >
+                                     <div class="first-drp-text">Avdelning</div>
+                                     <div class="second-drp-image"><img src="img/select_arrow.svg" alt="arrow"></div>
+                                     <div class="overlay-real-button" id="drop_2" data-id="2"><!--for js same as line category --></div>
+                                 </div>
+                                 <div id="form-food" name="formFood" class="dropdown-form">
+                                     <ul class="dropdown-options" role="listbox" tabindex="-1" data-id="2" ><!--for js same as line category 2-->
+                                     <!--Option 1 in second line category --- 2_check_1-->
+                                     <li class="option">
+                                        <input type="checkbox" name="2_check_1" id="2_check_1" class="inpt-check" data-name="Super">
+                                        <label for="2_check_1" class="2_inpt-check">Super</label>
+                                     </li>
+                                     <!--Option 2 in second line category --- 2_check_2-->
+                                     <li class="option">
+                                         <input type="checkbox" name="2_check_2" id="2_check_2" class="inpt-check" data-name="Puper">
+                                         <label for="2_check_2" class="inpt-check">Puper</label>
+                                      </li>
+                                     </ul>
+                                 </div>
+                             </div>
+             
+                         </div>
+                         <!--Drop button-->
+                         <div class="drop-btn-m-container">
+                             <div class="btn-drop-main-rsch">Visa 19966 Produkter i lager</div>
+                             <div class="btn-drop-main-rsch-close" id="clear-all-tgs-ch">
+                                 <div>
+                                     <svg width="24px" height="24px" xmlns="http://www.w3.org/2000/svg" viewBox="-10 -10 320 512">
+                                         <path fill="#757575" d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"></path>
+                                     </svg>
+                                 </div>
+                             </div>
+                          </div>
+                     </div>
+                 </div>
+               </div>
+            </div>
+            <!--USER icon-->
+            <div class="btn-centered colored-svg">
+               <div>
+                  <svg width="20px" height="20px" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                     <path d="M256 288c79.5 0 144-64.5 144-144S335.5 0 256 0 112 64.5 112 144s64.5 144 144 144zm128 32h-55.1c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16H128C57.3 320 0 377.3 0 448v16c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48v-16c0-70.7-57.3-128-128-128z"></path>
+                  </svg>
+               </div>
+            </div>
+            <!--CART icon-->
+            <div class="btn-centered colored-svg">
+               <div>
+                  <svg width="20px" height="20px" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                     <path d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"></path>
+                  </svg>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-------Adverisment--------->
+      <!--------------------------->
+      <div class="show-block-container">Just nu! Fri frakt på alla köp över 1000 kr</div>
+      <div class="width-main-container">
+         <!-------Breadcrumbs--------->
+         <!--------------------------->
+         <div class="breadcrumbs-container">
+            <div>
+               <a href="#"><span>&#10094;&nbsp;Tillbaka</span><span class="brd-line"></span></a>
+               <a href="#"><span>Barn</span><span class="brd-line"></span></a>
+               <a href="#"><span class="active-page">Sneakers</span></a>
+            </div>
+         </div>
+      </div>
+      <!--Product container-->
+      <div class="color-container-product">
+         <div class="width-main-container">
+            <div class="main-product-image-container">
+               <div class="product-image-container">
+                  <!--Likes-->
+                  <div class="like-heart-container">
+                     <div class="fl-like-container">
+                        <div class="svg-like-container">
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="24px" height="24px">
+                              <path fill="currentColor" d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"></path>
+                           </svg>
+                        </div>
+                        <div>121</div>
+                     </div>
+                  </div>
+                  <!--Product carousel-->
+                  <!-------------------->
+                  <div class="image-main-product">
+                     <div class="prosctu-image-mv-container">
+                        <div class="product-image-container-main-m">
+                           <img src="img/shoes_two.avif" alt="alt"><!--First image not lazy class-->
+                        </div>
+                     </div>
+                     <div class="prosctu-image-mv-container">
+                        <div class="product-image-container-main-m">
+                           <img class="lazy-image" src="" alt="alt" data-src="img/shoes_one.avif">
+                        </div>
+                     </div>
+                     <div class="prosctu-image-mv-container">
+                        <div class="product-image-container-main-m">
+                           <img class="lazy-image" src="" alt="alt" data-src="img/shoes_three.avif">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="width-main-container">
+         <!--3D button-->
+         <!----------------------->
+         <div class="trd-btn-container">
+            <div class="trd-btn-body">3D</div>
+         </div>
+         <!--More colors-->
+         <!----------------------->
+         <p class="more-colors-header">Fler färger</p>
+         <div class="size-container-one">
+            <div class="flex-colors-product-d">
+               <!--Product color another one-->
+               <div class="product-image-color-b">
+                  <img class="lazy-image" src="" alt="alt" data-src="img/white.avif">
+               </div>
+               <!--Product color another one-->
+               <div class="product-image-color-b">
+                  <img class="lazy-image" src="" alt="alt" data-src="img/white.avif">
+               </div>
+               <!--Product color another one-->
+               <div class="product-image-color-b">
+                  <img class="lazy-image" src="" alt="alt" data-src="img/white.avif">
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--Product mark name brand-->
+      <!---------------------------------->
+      <div class="brand-name">
+         <div class="name-brand-main">Reebok</div>
+      </div>
+      <div class="prd-pad-container">
+         <div class="drb-product-name-flex">
+            <div class="brand-image">
+               <img src="img/reebok_logo_wbg.avif" alt="alt">
+            </div>
+            <div class="prd-main-name-price">
+               <p class="product-main-info-name">Reebok Xt Sprinter 2.0 Vecnav/vecred/sesogo</p>
+               <p class="price-product-main"><span>359 kr</span>&nbsp;289 kr</p>
+            </div>
+         </div>
+         <!--Size-->
+         <div class="size-btn-main">Storleksguide</div>
+         <div class="size-container-order">
+            <select name="city">
+               <option value="volvo" disabled="" selected="">Storlek</option>
+               <option value="EU 36">EU 36</option>
+               <option value="EU 37">EU 37</option>
+               <option value="EU 38">EU 38</option>
+               <option value="EU 39">EU 39</option>
+            </select>
+            <button type="submit" class="order-sbm">Lägg i varukorgen</button>
+         </div>
+         <!--Advantages-->
+         <div class="all-advanyafe-block">
+            <!--Advant-->
+            <div class="flex-advantage-container">
+               <div class="adv-svg-bd">
+                  <svg width="20px" height="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                     <path fill="currentColor" d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path>
+                  </svg>
+               </div>
+               <div class="adv-text-size">Produkten finns i lager! Skickas idag.</div>
+            </div>
+            <!--Advant-->
+            <div class="flex-advantage-container">
+               <div class="adv-svg-bd">
+                  <svg width="20px" height="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                     <path fill="currentColor" d="M624 352h-16V243.9c0-12.7-5.1-24.9-14.1-33.9L494 110.1c-9-9-21.2-14.1-33.9-14.1H416V48c0-26.5-21.5-48-48-48H112C85.5 0 64 21.5 64 48v48H8c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h272c4.4 0 8 3.6 8 8v16c0 4.4-3.6 8-8 8H40c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h208c4.4 0 8 3.6 8 8v16c0 4.4-3.6 8-8 8H8c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h208c4.4 0 8 3.6 8 8v16c0 4.4-3.6 8-8 8H64v128c0 53 43 96 96 96s96-43 96-96h128c0 53 43 96 96 96s96-43 96-96h48c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16zM160 464c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm320 0c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm80-208H416V144h44.1l99.9 99.9V256z"></path>
+                  </svg>
+               </div>
+               <div class="adv-text-size">Gratis fraktalternativ vid köp över 1000 kr</div>
+            </div>
+            <!--Advant-->
+            <div class="flex-advantage-container">
+               <div class="adv-svg-bd">
+                  <svg width="20px" height="20px" viewBox="0 -45 512 512" xmlns="http://www.w3.org/2000/svg">
+                     <path fill="currentColor" d="M413.7 489.9c-4.3-4.4-4.5-11.5-.4-16.1 75.7-83.7 73.7-213.4-7.6-294.7-58.6-58.6-142.7-76.1-216.5-52.5l48.8 48.8c4.7 4.7 4.7 12.3 0 17l-7.1 7.1c-4.7 4.7-12.3 4.7-17 0l-81.1-81.1c-4.7-4.7-4.7-12.3 0-17l85.1-87.1c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17l-50.2 52.2c82.6-21.5 174.1.2 238.6 65.2 93 93.6 95.7 244.1 8.2 341-4.8 5.3-12.9 5.5-17.9.4l-7-7.3zM48.7 318h17.7c8.4 0 14.6-2.1 18.7-6.3 4.1-4.2 6.1-9.8 6.1-16.7 0-6.7-2-12-6-15.7-4-3.7-9.5-5.6-16.6-5.6-6.3 0-11.7 1.7-15.9 5.2-4.3 3.5-6.4 8-6.4 13.6H13c0-8.7 2.4-16.5 7.1-23.5 4.7-6.9 11.3-12.3 19.7-16.2 8.4-3.9 17.8-5.8 27.9-5.8 17.7 0 31.5 4.2 41.5 12.7s15 20.1 15 34.9c0 7.6-2.3 14.7-7 21.1-4.7 6.4-10.8 11.4-18.4 14.8 9.4 3.4 16.4 8.4 21 15.1 4.6 6.7 6.9 14.7 6.9 23.9 0 14.8-5.4 26.7-16.2 35.7-10.8 8.9-25.1 13.4-43 13.4-16.7 0-30.3-4.4-40.9-13.2-10.6-8.8-15.9-20.4-15.9-34.9h33.1c0 6.3 2.4 11.4 7.1 15.4 4.7 4 10.5 6 17.4 6 7.9 0 14.1-2.1 18.5-6.3 4.5-4.2 6.7-9.7 6.7-16.6 0-16.7-9.2-25-27.5-25H48.7v-26z"></path>
+                     <path fill="currentColor"d="M239.6 247.4v27.3h-3.2c-15 .2-27.1 4.1-36.2 11.7-9.1 7.6-14.6 18.1-16.5 31.5 8.9-9 20.1-13.5 33.6-13.5 14.5 0 26.1 5.2 34.6 15.6 8.6 10.4 12.8 24.1 12.8 41.1 0 10.9-2.4 20.7-7.1 29.5-4.7 8.8-11.4 15.6-20 20.5s-18.3 7.3-29.2 7.3c-17.6 0-31.8-6.1-42.6-18.4-10.8-12.2-16.2-28.6-16.2-49v-11.9c0-18.1 3.4-34.1 10.3-48 6.8-13.9 16.7-24.6 29.5-32.2 12.8-7.6 27.7-11.5 44.6-11.5h5.6zm-32.3 83.8c-5.4 0-10.2 1.4-14.6 4.2s-7.6 6.5-9.6 11v10.1c0 11.1 2.2 19.7 6.5 25.9 4.4 6.2 10.5 9.3 18.4 9.3 7.1 0 12.9-2.8 17.3-8.4 4.4-5.6 6.6-12.9 6.6-21.8 0-9.1-2.2-16.4-6.7-22-4.4-5.6-10.4-8.3-17.9-8.3zM289.4 334l9.6-84.9h93.6v27.6h-66.4l-4.1 35.9c7.9-4.2 16.2-6.3 25.1-6.3 15.9 0 28.4 4.9 37.4 14.8s13.5 23.7 13.5 41.4c0 10.8-2.3 20.4-6.8 29-4.5 8.5-11.1 15.1-19.6 19.8-8.5 4.7-18.5 7.1-30 7.1-10.1 0-19.5-2-28.1-6.1-8.6-4.1-15.5-9.8-20.5-17.3-5-7.4-7.7-15.9-8-25.3H318c.7 7 3.1 12.4 7.3 16.2 4.2 3.9 9.6 5.8 16.3 5.8 7.5 0 13.3-2.7 17.3-8.1 4.1-5.4 6.1-13 6.1-22.9 0-9.5-2.3-16.7-7-21.8-4.7-5-11.3-7.6-19.8-7.6-7.9 0-14.3 2.1-19.2 6.2l-3.2 3-26.4-6.5z"></path>
+                  </svg>
+               </div>
+               <div class="adv-text-size">365 dagars fri retur</div>
+            </div>
+         </div>
+         <!--Companies-->
+         <!--------------------->
+         <div class="companies-flex-container">
+            <div class="cmp-block-item">
+               <img src="img/cmp_one.png" alt="alt">
+            </div>
+            <div class="cmp-block-item">
+               <img src="img/cmp_two.png" alt="alt">
+            </div>
+            <div class="cmp-block-item">
+               <img src="img/cmp_three.png" alt="alt">
+            </div>
+            <div class="cmp-block-item">
+               <img src="img/cmp_four.png" alt="alt">
+            </div>
+            <div class="cmp-block-item">
+               <img src="img/smp_five.png" alt="alt">
+            </div>
+            <div class="cmp-block-item">
+               <img src="img/cmp_six.png" alt="alt">
+            </div>
+         </div>
+         <!--Flex icons people-->
+         <div class="flex-icons-people">
+            <div>
+               <svg width="20px" height="20px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="currentColor" d="M96 0c35.346 0 64 28.654 64 64s-28.654 64-64 64-64-28.654-64-64S60.654 0 96 0m48 144h-11.36c-22.711 10.443-49.59 10.894-73.28 0H48c-26.51 0-48 21.49-48 48v136c0 13.255 10.745 24 24 24h16v136c0 13.255 10.745 24 24 24h64c13.255 0 24-10.745 24-24V352h16c13.255 0 24-10.745 24-24V192c0-26.51-21.49-48-48-48z"></path>
+               </svg>
+            </div>
+            <div>
+               <svg width="20px" height="20px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="currentColor" d="M128 0c35.346 0 64 28.654 64 64s-28.654 64-64 64c-35.346 0-64-28.654-64-64S92.654 0 128 0m119.283 354.179l-48-192A24 24 0 0 0 176 144h-11.36c-22.711 10.443-49.59 10.894-73.28 0H80a24 24 0 0 0-23.283 18.179l-48 192C4.935 369.305 16.383 384 32 384h56v104c0 13.255 10.745 24 24 24h32c13.255 0 24-10.745 24-24V384h56c15.591 0 27.071-14.671 23.283-29.821z"></path>
+               </svg>
+            </div>
+            <div>
+               <svg width="15px" height="15px" style="margin-top:5px;" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="currentColor" d="M120 72c0-39.765 32.235-72 72-72s72 32.235 72 72c0 39.764-32.235 72-72 72s-72-32.236-72-72zm254.627 1.373c-12.496-12.497-32.758-12.497-45.254 0L242.745 160H141.254L54.627 73.373c-12.496-12.497-32.758-12.497-45.254 0-12.497 12.497-12.497 32.758 0 45.255L104 213.254V480c0 17.673 14.327 32 32 32h16c17.673 0 32-14.327 32-32V368h16v112c0 17.673 14.327 32 32 32h16c17.673 0 32-14.327 32-32V213.254l94.627-94.627c12.497-12.497 12.497-32.757 0-45.254z"></path>
+               </svg>
+            </div>
+         </div>
+         <!--Product information-->
+         <p class="product-info-text">Produktinformation</p>
+         <!--Product info line-->
+         <div class="flex-line-info">
+            <div>Artikelnummer</div>
+            <div>60540-36</div>
+         </div>
+         <!--Product info line-->
+         <div class="flex-line-info">
+            <div>Material</div>
+            <div>Läder- textilgummi</div>
+         </div>
+         <!--Product info line-->
+         <div class="flex-line-info">
+            <div>Avdelning</div>
+            <div>Barn</div>
+         </div>
+         <!--Product info line-->
+         <div class="flex-line-info">
+            <div>Produkttyp</div>
+            <div>Skor</div>
+         </div>
+         <!--Product info line-->
+         <div class="flex-line-info">
+            <div>Färg</div>
+            <div>Blå</div>
+         </div>
+         <!--Product info line-->
+         <div class="flex-line-info">
+            <div>Detaljer</div>
+            <div>Snören</div>
+         </div>
+         <!--Product info line-->
+         <div class="flex-line-info">
+            <div>Klackhöjd</div>
+            <div>4</div>
+         </div>
+         <!--Product info line-->
+         <div class="flex-line-info">
+            <div>Produktgrupp</div>
+            <div>Sneakers</div>
+         </div>
+         <!--Product info line-->
+         <div class="flex-line-info">
+            <div>Kategori</div>
+            <div>Sneakers</div>
+         </div>
+      </div>
+      <!--Leave comments-->
+      <div class="brand-name">
+         <div class="name-brand-main">Hjälp andra, dela din åsikt</div>
+      </div>
+      <div class="comments-container">
+         <div class="flex-comment-container-input">
+            <div class="cmt-icon">
+               <div class="circle-inp-cmt"></div>
+            </div>
+            <div class="cmt-input">
+               <form action="#">
+                  <div class="flex-input-btn-cmt">
+                     <div>
+                        <input type="text" placeholder="Skriv en kommentar">
+                     </div>
+                     <div class="photo-send">
+                        <svg width="24px" height="24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                           <path  fill="#bdbdbd" d="M512 144v288c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V144c0-26.5 21.5-48 48-48h88l12.3-32.9c7-18.7 24.9-31.1 44.9-31.1h125.5c20 0 37.9 12.4 44.9 31.1L376 96h88c26.5 0 48 21.5 48 48zM376 288c0-66.2-53.8-120-120-120s-120 53.8-120 120 53.8 120 120 120 120-53.8 120-120zm-32 0c0 48.5-39.5 88-88 88s-88-39.5-88-88 39.5-88 88-88 88 39.5 88 88z"></path>
+                        </svg>
+                     </div>
+                  </div>
+               </form>
+            </div>
+            <div class="cmt-icon">
+               <div>
+                  <svg width="24px" height="24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 -20 512 512">
+                     <path fill="#bdbdbd" d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"></path>
+                  </svg>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--Recommended products-->
+      <div class="brand-name">
+         <div class="name-brand-main">Rekommenderade produkter</div>
+      </div>
+      <div class="size-container-two">
+         <div class="reccomded-flex-container">
+            <!--ITEM-->
+            <div class="slick-slide rec-procut-ma-block">
+               <div class="rec-main-bd">
+                  <img class="lazy-image" src="" alt="alt" data-src="img/white.avif">
+               </div>
+               <p class="rec-pr-name">Reebok</p>
+               <p class="rec-pr-decsr-main">Reebok Xt Sprinter 2.0 Vecnav/vecred/sesogo</p>
+               <p class="price-rec">359&nbsp;kr</p>
+            </div>
+            <!--ITEM-->
+            <div class="rec-procut-ma-block">
+               <div class="rec-main-bd">
+                  <!--rec like-->
+                  <div class="recom-like-container">
+                     <div class="like-heart-container">
+                        <div class="fl-like-container">
+                           <div class="svg-like-container">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="24px" height="24px">
+                                 <path fill="currentColor" d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"></path>
+                              </svg>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <img class="lazy-image" src="" alt="alt" data-src="img/white.avif">
+               </div>
+               <p class="rec-pr-name">adidas Sport Performance</p>
+               <p class="rec-pr-decsr-main">Reebok Xt Sprinter 2.0 Vecnav/vecred/sesogo</p>
+               <p class="price-rec"><span class="new-price-rec">404&nbsp;kr</span>&nbsp;<span class="old-price-rec">539&nbsp;kr</span></p>
+            </div>
+            <!--ITEM-->
+            <div class="slick-slide rec-procut-ma-block">
+               <div class="rec-main-bd">
+                  <img class="lazy-image" src="" alt="alt" data-src="img/white.avif">
+               </div>
+               <p class="rec-pr-name">Reebok</p>
+               <p class="rec-pr-decsr-main">Reebok Xt Sprinter 2.0 Vecnav/vecred/sesogo</p>
+               <p class="price-rec">359&nbsp;kr</p>
+            </div>
+            <!--ITEM-->
+            <div class="rec-procut-ma-block">
+               <div class="rec-main-bd">
+                  <!--rec like-->
+                  <div class="recom-like-container">
+                     <div class="like-heart-container">
+                        <div class="fl-like-container">
+                           <div class="svg-like-container">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="24px" height="24px">
+                                 <path fill="currentColor" d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"></path>
+                              </svg>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <img class="lazy-image" src="" alt="alt" data-src="img/white.avif">
+               </div>
+               <p class="rec-pr-name">adidas Sport Performance</p>
+               <p class="rec-pr-decsr-main">Reebok Xt Sprinter 2.0 Vecnav/vecred/sesogo</p>
+               <p class="price-rec"><span class="new-price-rec">404&nbsp;kr</span>&nbsp;<span class="old-price-rec">539&nbsp;kr</span></p>
+            </div>
+            <!--ITEM-->
+            <div class="slick-slide rec-procut-ma-block">
+               <div class="rec-main-bd">
+                  <!--rec like-->
+                  <div class="recom-like-container">
+                     <div class="like-heart-container">
+                        <div class="fl-like-container">
+                           <div class="svg-like-container">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="24px" height="24px">
+                                 <path fill="currentColor" d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"></path>
+                              </svg>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <img class="lazy-image" src="" alt="alt" data-src="img/white.avif">
+               </div>
+               <p class="rec-pr-name">Reebok</p>
+               <p class="rec-pr-decsr-main">Reebok Xt Sprinter 2.0 Vecnav/vecred/sesogo</p>
+               <p class="price-rec">359&nbsp;kr</p>
+            </div>
+            <!--ITEM-->
+            <div class="rec-procut-ma-block">
+               <div class="rec-main-bd">
+                  <!--rec like-->
+                  <div class="recom-like-container">
+                     <div class="like-heart-container">
+                        <div class="fl-like-container">
+                           <div class="svg-like-container">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="24px" height="24px">
+                                 <path fill="currentColor" d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"></path>
+                              </svg>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <img class="lazy-image" src="" alt="alt" data-src="img/white.avif">
+               </div>
+               <p class="rec-pr-name">adidas Sport Performance</p>
+               <p class="rec-pr-decsr-main">Reebok Xt Sprinter 2.0 Vecnav/vecred/sesogo</p>
+               <p class="price-rec"><span class="new-price-rec">404&nbsp;kr</span>&nbsp;<span class="old-price-rec">539&nbsp;kr</span></p>
+            </div>
+         </div>
+      </div>
+      <!--FOOTER-->
+      <!--=============================-->
+      <!--=============================-->
+      <div class="main-footer-container">
+         <div class="ft-background" id="ft-im-bl" style="opacity: 1;"></div>
+         <!--Support-->
+         <div class="flex-data-footer-info">
+            <!--Mail-->
+            <div class="support-block-flex">
+               <div class="svg-support">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                     <path width="20px" height="20px" fill="rgb(189, 189, 189)" d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path>
+                  </svg>
+               </div>
+               <div class="text-support">Support</div>
+            </div>
+            <!--Call-->
+            <div class="support-block-flex">
+               <div class="svg-support">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                     <path width="20px" height="20px" fill="rgb(189, 189, 189)" d="M192 208c0-17.67-14.33-32-32-32h-16c-35.35 0-64 28.65-64 64v48c0 35.35 28.65 64 64 64h16c17.67 0 32-14.33 32-32V208zm176 144c35.35 0 64-28.65 64-64v-48c0-35.35-28.65-64-64-64h-16c-17.67 0-32 14.33-32 32v112c0 17.67 14.33 32 32 32h16zM256 0C113.18 0 4.58 118.83 0 256v16c0 8.84 7.16 16 16 16h16c8.84 0 16-7.16 16-16v-16c0-114.69 93.31-208 208-208s208 93.31 208 208h-.12c.08 2.43.12 165.72.12 165.72 0 23.35-18.93 42.28-42.28 42.28H320c0-26.51-21.49-48-48-48h-32c-26.51 0-48 21.49-48 48s21.49 48 48 48h181.72c49.86 0 90.28-40.42 90.28-90.28V256C507.42 118.83 398.82 0 256 0z"></path>
+                  </svg>
+               </div>
+               <div class="text-support">020-12 12 11</div>
+            </div>
+         </div>
+         <!--Team-->
+         <!---------------------->
+         <div class="teeam-flex-container">
+            <div class="all-flex-team-block">
+               <!--FAQ-->
+               <div class="support-block-flex">
+                  <div class="svg-support">
+                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path width="20px" height="20px" fill="rgb(189, 189, 189)" d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zM262.655 90c-54.497 0-89.255 22.957-116.549 63.758-3.536 5.286-2.353 12.415 2.715 16.258l34.699 26.31c5.205 3.947 12.621 3.008 16.665-2.122 17.864-22.658 30.113-35.797 57.303-35.797 20.429 0 45.698 13.148 45.698 32.958 0 14.976-12.363 22.667-32.534 33.976C247.128 238.528 216 254.941 216 296v4c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12v-1.333c0-28.462 83.186-29.647 83.186-106.667 0-58.002-60.165-102-116.531-102zM256 338c-25.365 0-46 20.635-46 46 0 25.364 20.635 46 46 46s46-20.636 46-46c0-25.365-20.635-46-46-46z"></path>
+                     </svg>
+                  </div>
+                  <div class="text-support">FAQ</div>
+               </div>
+               <!--Team-->
+               <div class="support-block-flex">
+                  <div class="svg-support">
+                     <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                        <path width="20px" height="20px" fill="rgb(189, 189, 189)" d="M96 224c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm448 0c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm32 32h-64c-17.6 0-33.5 7.1-45.1 18.6 40.3 22.1 68.9 62 75.1 109.4h66c17.7 0 32-14.3 32-32v-32c0-35.3-28.7-64-64-64zm-256 0c61.9 0 112-50.1 112-112S381.9 32 320 32 208 82.1 208 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C179.6 288 128 339.6 128 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zm-223.7-13.4C161.5 263.1 145.6 256 128 256H64c-35.3 0-64 28.7-64 64v32c0 17.7 14.3 32 32 32h65.9c6.3-47.4 34.9-87.3 75.2-109.4z"></path>
+                     </svg>
+                  </div>
+                  <div class="text-support">Team</div>
+               </div>
+               <!--Investors-->
+               <div class="support-block-flex">
+                  <div class="svg-support">
+                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path width="20px" height="20px" fill="rgb(189, 189, 189)" d="M496 384H64V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v336c0 17.67 14.33 32 32 32h464c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16zM464 96H345.94c-21.38 0-32.09 25.85-16.97 40.97l32.4 32.4L288 242.75l-73.37-73.37c-12.5-12.5-32.76-12.5-45.25 0l-68.69 68.69c-6.25 6.25-6.25 16.38 0 22.63l22.62 22.62c6.25 6.25 16.38 6.25 22.63 0L192 237.25l73.37 73.37c12.5 12.5 32.76 12.5 45.25 0l96-96 32.4 32.4c15.12 15.12 40.97 4.41 40.97-16.97V112c.01-8.84-7.15-16-15.99-16z"></path>
+                     </svg>
+                  </div>
+                  <div class="text-support">Investors</div>
+               </div>
+            </div>
+         </div>
+         <div class="color-ft-2-container">
+            <div class="prd-pad-container investors-ft-block">
+               <!--Companies-->
+               <!--------------------->
+               <div class="companies-flex-container">
+                  <div class="cmp-block-item">
+                     <img src="img/cmp_one.png" alt="alt">
+                  </div>
+                  <div class="cmp-block-item">
+                     <img src="img/cmp_two.png" alt="alt">
+                  </div>
+                  <div class="cmp-block-item">
+                     <img src="img/cmp_three.png" alt="alt">
+                  </div>
+                  <div class="cmp-block-item">
+                     <img src="img/cmp_four.png" alt="alt">
+                  </div>
+                  <div class="cmp-block-item">
+                     <img src="img/smp_five.png" alt="alt">
+                  </div>
+                  <div class="cmp-block-item">
+                     <img src="img/cmp_six.png" alt="alt">
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!--Footer logo container-->
+         <div class="footer-logo-container">
+            <div class="ft-logo-main">
+               <svg width="160px" height="60px" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 64 26" xmlspace="preserve">
+                  <path fill="rgb(189, 189, 189)" d="M10.99 13.64c-1.666-.65-2.966-2.973-2.938-5.199.028-2.23 1.38-3.621 3.054-3.084 1.723.554 3.131 2.927 3.095 5.271-.036 2.34-1.497 3.681-3.21 3.012zm.152-10.859c-2.696-.808-4.83 1.462-4.871 5.027-.042 3.553 2.008 7.282 4.684 8.383 2.8 1.152 5.218-.987 5.281-4.839.064-3.866-2.271-7.725-5.094-8.57zm11.02 15.071c-1.987-.773-3.525-3.352-3.483-5.775.043-2.428 1.66-3.9 3.658-3.261 2.06.66 3.741 3.302 3.687 5.866-.053 2.558-1.812 3.967-3.861 3.17zm.229-11.848c-3.216-.96-5.762 1.448-5.826 5.324-.064 3.862 2.357 7.997 5.544 9.305 3.35 1.374 6.268-.866 6.362-5.084.094-4.234-2.7-8.536-6.08-9.545zm-17.352.122l-2.121-.732.027-2.704 3.691 1.184c.208.067.38-.106.383-.385L7.035 2.2c.003-.28-.164-.559-.371-.621L1.45.01c-.189-.056-.344.114-.347.38L1 11.484c-.002.263.148.539.335.616l1.16.475c.192.08.35-.074.353-.34l.047-4.628 2.12.772c.2.074.367-.09.37-.364L5.4 6.75c.003-.275-.16-.555-.36-.624zm57.84-2.614c-.043-.13-.136-.18-.263-.14l-1.305.412-1.728 5.27c-.052.16-.127.188-.177.07L57.65 4.939l-1.572.496c-.127.04-.247.193-.304.39a.834.834 0 00.044.603l2.634 5.522c.072.15.132.459.13.672l-.026 4.44c-.001.276.14.429.315.341l1.048-.527c.168-.085.307-.373.31-.642l.04-4.322c.003-.21.064-.56.135-.766l2.44-7.101c.065-.203.078-.402.034-.533zM52.082 15.217l1.17-5.237 1.206 4.22-2.376 1.017zm2.35-8.774c-.073-.25-.285-.398-.482-.336l-.036.011-1.353.427-.027.009c-.206.065-.426.357-.5.665l-.444 1.865-2.035 8.173-.063.249a6.368 6.368 0 01-.047-.208l-1.941-9.156-2.431.767c-.25.078-.499.421-.556.764L42.8 20.054l-.03.18-.035-.151-2.01-9.176c-.071-.322-.355-.513-.635-.425l-1.876.592L28.098 8.03c-.29-.087-.53.11-.538.437l-.033 1.51c-.007.327.222.669.512.762l3.091.991a.555.555 0 01.357.514l-.271 11.503c-.008.332.235.706.54.831l1.884.773c.314.129.577-.043.585-.382l.294-11.744c.005-.223.182-.35.392-.282l3.097.993-.004.062 3.265 11.672c.073.285.346.41.608.277l1.839-.924c.248-.125.494-.499.549-.834l1.825-11.091.034-.202.043.173 2.158 9.106a.394.394 0 00.243.294c.058.044.138.045.23-.001l.04-.02 1.513-.761.271-.137.846-3.528 3.615-1.67.771 2.568 1.605-.807a.454.454 0 00.212-.266.59.59 0 00.013-.357L54.433 6.443z" fill="inherit" fillrule="evenodd"></path>
+              </svg>
+            </div>
+         </div>
+         <!--Social media-->
+         <div class="flex-social-media">
+            <div class="center-social-block">
+               <!--Facebook-->
+               <div class="social-md-block">
+                  <div>
+                     <svg  width="24px" height="24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                        <path  fill="rgb(189, 189, 189)" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path>
+                     </svg>
+                  </div>
+               </div>
+               <!--Insta-->
+               <div class="social-md-block">
+                  <div>
+                     <svg width="24px" height="24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path  fill="rgb(189, 189, 189)" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+                     </svg>
+                  </div>
+               </div>
+               <!--Linked in-->
+               <div class="social-md-block">
+                  <div>
+                     <svg width="24px" height="24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path fill="rgb(189, 189, 189)" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
+                     </svg>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!--Flex links-->
+         <div class="ft-links-main-flex">
+            <div><a href="#">Terms</a></div>
+            <div><a href="#">Privacy</a></div>
+            <div><a href="#">Sitemap</a></div>
+            <div><a href="#">Cookies</a></div>
+         </div>
+         <div class="footer-bottom-center">
+            <p class="ft-main-pr-tezt">
+               &#169; 2010-2022 Footway Group AB Listed on Nasdaq First North Growth Market
+            </p>
+            <div class="flex-ft-text-links">
+               <span><a href="#">sportamore.com</a></span>
+               <span><a href="#">caliroots.com</a></span>
+               <span><a href="#">heppo.com</a></span>
+               <span><a href="#">footway.com</a></span>
+               <span><a href="#">runforest.com</a></span>
+               <span><a href="#">thesolestory.com</a></span>
+               <span><a href="#">brandosa.com</a></span>
+               <span><a href="#">belapadel.com</a></span>
+               <span><a href="#">racketnow.com</a></span>
+            </div>
+            <div class="email-ft-kol">Storesupport-SE@footway.com - 020-12 12 11</div>
+         </div>
+         <div class="language-container-footer">
+            <div class="block-input-center">
+               <select name="city">
+                  <option value="volvo" disabled="" selected="">Sweden</option>
+                  <option value="EU 36">EU 36</option>
+                  <option value="EU 37">EU 37</option>
+                  <option value="EU 38">EU 38</option>
+                  <option value="EU 39">EU 39</option>
+               </select>
+            </div>
+         </div>
+         <div class="footer-main-logo-container">
+            <div>
+               <svg height="30px" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 64 26" xmlspace="preserve">
+                  <path fill="#372A3D" d="M10.99 13.64c-1.666-.65-2.966-2.973-2.938-5.199.028-2.23 1.38-3.621 3.054-3.084 1.723.554 3.131 2.927 3.095 5.271-.036 2.34-1.497 3.681-3.21 3.012zm.152-10.859c-2.696-.808-4.83 1.462-4.871 5.027-.042 3.553 2.008 7.282 4.684 8.383 2.8 1.152 5.218-.987 5.281-4.839.064-3.866-2.271-7.725-5.094-8.57zm11.02 15.071c-1.987-.773-3.525-3.352-3.483-5.775.043-2.428 1.66-3.9 3.658-3.261 2.06.66 3.741 3.302 3.687 5.866-.053 2.558-1.812 3.967-3.861 3.17zm.229-11.848c-3.216-.96-5.762 1.448-5.826 5.324-.064 3.862 2.357 7.997 5.544 9.305 3.35 1.374 6.268-.866 6.362-5.084.094-4.234-2.7-8.536-6.08-9.545zm-17.352.122l-2.121-.732.027-2.704 3.691 1.184c.208.067.38-.106.383-.385L7.035 2.2c.003-.28-.164-.559-.371-.621L1.45.01c-.189-.056-.344.114-.347.38L1 11.484c-.002.263.148.539.335.616l1.16.475c.192.08.35-.074.353-.34l.047-4.628 2.12.772c.2.074.367-.09.37-.364L5.4 6.75c.003-.275-.16-.555-.36-.624zm57.84-2.614c-.043-.13-.136-.18-.263-.14l-1.305.412-1.728 5.27c-.052.16-.127.188-.177.07L57.65 4.939l-1.572.496c-.127.04-.247.193-.304.39a.834.834 0 00.044.603l2.634 5.522c.072.15.132.459.13.672l-.026 4.44c-.001.276.14.429.315.341l1.048-.527c.168-.085.307-.373.31-.642l.04-4.322c.003-.21.064-.56.135-.766l2.44-7.101c.065-.203.078-.402.034-.533zM52.082 15.217l1.17-5.237 1.206 4.22-2.376 1.017zm2.35-8.774c-.073-.25-.285-.398-.482-.336l-.036.011-1.353.427-.027.009c-.206.065-.426.357-.5.665l-.444 1.865-2.035 8.173-.063.249a6.368 6.368 0 01-.047-.208l-1.941-9.156-2.431.767c-.25.078-.499.421-.556.764L42.8 20.054l-.03.18-.035-.151-2.01-9.176c-.071-.322-.355-.513-.635-.425l-1.876.592L28.098 8.03c-.29-.087-.53.11-.538.437l-.033 1.51c-.007.327.222.669.512.762l3.091.991a.555.555 0 01.357.514l-.271 11.503c-.008.332.235.706.54.831l1.884.773c.314.129.577-.043.585-.382l.294-11.744c.005-.223.182-.35.392-.282l3.097.993-.004.062 3.265 11.672c.073.285.346.41.608.277l1.839-.924c.248-.125.494-.499.549-.834l1.825-11.091.034-.202.043.173 2.158 9.106a.394.394 0 00.243.294c.058.044.138.045.23-.001l.04-.02 1.513-.761.271-.137.846-3.528 3.615-1.67.771 2.568 1.605-.807a.454.454 0 00.212-.266.59.59 0 00.013-.357L54.433 6.443z" fill="inherit" fillrule="evenodd"></path>
+              </svg>
+            </div>
+         </div>
+      </div>
+   </body>
+   <!--CAROUSEL-->
+   <script type="text/javascript" src="./carousel/slick-1.8.1/slick/slick.min.js"></script>
+   <!--Menu and DropDown-->
+   <script type="text/javascript" src="js/main.js"></script>
+</html>
